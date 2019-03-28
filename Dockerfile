@@ -16,6 +16,6 @@ WORKDIR /home/acado/build
 RUN cmake ..
 RUN make
 
-RUN /bin/bash -c "source /home/acado/build/acado_env.sh" 
+RUN make install
 
 CMD ["/bin/bash"]
