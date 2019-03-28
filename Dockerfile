@@ -18,4 +18,6 @@ RUN make
 
 RUN make install
 
+RUN /bin/bash -c "source /home/acado/build/acado_env.sh"
+
 CMD ["/bin/bash"]
