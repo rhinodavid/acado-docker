@@ -16,3 +16,4 @@ WORKDIR /home/acado/build
 RUN cmake ..
 RUN make
 
+CMD ["/bin/bash"]
