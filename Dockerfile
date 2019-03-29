@@ -1,5 +1,7 @@
 FROM ubuntu:cosmic
 
+SHELL ["/bin/bash", "-c"]
+
 RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
@@ -18,6 +20,6 @@ RUN make
 
 RUN make install
 
-RUN /bin/bash -c "source /home/acado/build/acado_env.sh"
+RUN source /home/acado/build/acado_env.sh
 
 CMD ["/bin/bash"]
