@@ -20,4 +20,6 @@ RUN make install
 
 RUN echo "source /home/acado/build/acado_env.sh" >> /root/.bashrc
 
+VOLUME ["/out"]
+
 CMD ["/bin/bash"]
